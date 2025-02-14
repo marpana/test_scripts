@@ -1,0 +1,4 @@
+This is Example file
+It has Multiple Example files
+We will check the word Example
+Lets count how many Example words are there
