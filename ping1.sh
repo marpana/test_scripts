@@ -1,5 +1,5 @@
 #!/bin/bash
-read -p "Enter url" url
+read -p "Enter url---" url
 echo $url
 ping -c 3 $url > /dev/null
 
