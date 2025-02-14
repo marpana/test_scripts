@@ -14,7 +14,3 @@ echo $(top -bn1 | grep "Cpu(s)" | awk '{print $2}')%
 echo "Disk Usage"
 echo $(df -h | awk '/\//{print $4}') available
 
-echo "Network Usage"
-echo "************************************"
-
-echo $(iftop -t -s 2 | grep "Total Send and Receive " | awk '{print $5}')
