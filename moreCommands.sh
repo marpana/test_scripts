@@ -9,3 +9,8 @@ netstat -tuln
 echo "CPU Usage--"
 echo "*****************************"
 echo $(top -bn1 | grep "Cpu(s)" | awk '{print $2'})%
+
+echo "Memory Usage---"
+
+echo "*******************************"
+echo $(free -m | awk '/Mem/{print $3')MB
