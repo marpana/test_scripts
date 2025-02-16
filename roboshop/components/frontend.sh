@@ -1,3 +1,5 @@
+echo frontend setup............
+
 ## yum install nginx -y
 ## systemctl enable nginx
 ## systemctl start nginx
@@ -18,10 +20,5 @@
 ## systemctl restart nginx
 
 #check whether the script is running as a root user or not
-USER_ID=$(id -u)
-if [ ${USER_ID} -ne 0 ]; then
-  echo -e "\e[1;31mYou must be a root user to perform this script\e[0m"
-  exit
-  fi
-#yum install nginx
+
 #curl -s -L -o /tmp/frontend.zip "https://github.com/roboshop-devops-project/frontend/archive/main.zip"
