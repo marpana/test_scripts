@@ -18,7 +18,7 @@
 ## systemctl restart nginx
 
 #check whether the script is running as a root user or not
-USER_Id=$(id -u)
+USER_ID=$(id -u)
 if [ ${USER_ID} -ne 0 ]; then
   echo -e "\e[1;31mYou must be a root user to perform this script\e[0m"
   exit
