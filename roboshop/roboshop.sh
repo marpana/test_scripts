@@ -14,6 +14,6 @@ if [ -z ${COMPONENT} ]; then
     echo -e "\e[1;31mGiven Component script does not exists\e[0m"
     exit
     fi
-# If the component exists
+# If the component exists , we run our scripts
 bash components/${COMPONENT}.sh
     
